@@ -1,10 +1,23 @@
 import React, { Component } from 'react';
+import Particles from 'react-particles-js';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import ErrorBoundary from '../components/ErrorBoundary';
 import { robots } from '../robots';
 import './App.css';
+
+const particlesOptions = {
+  particles: {
+    number: {
+      value: 80,
+      density: {
+        enable: true,
+        value_area: 800
+      }
+    }
+  }
+}
 
 class App extends Component {
   constructor() {
@@ -37,13 +50,16 @@ class App extends Component {
     } else {
       return (
         <div className='tc'>
-          <h1 className='f1'>RoboFriends</h1>
+         <Particles className='particles'
+          params={particlesOptions}
+        />
+          <h1 className='f1'>Select an Account</h1>
           <SearchBox searchChange={this.onSearchChange}/>
           <Scroll>
             <ErrorBoundary>
               <CardList robots={filteredRobots} />
             </ErrorBoundary>
-          </Scroll>-
+          </Scroll>
         </div>
       );
     }
