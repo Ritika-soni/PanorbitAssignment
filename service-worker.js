@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/PanorbitAssignment/precache-manifest.8552d793e59caa2ede200e935c643dcf.js"
+  "/PanorbitAssignment/precache-manifest.40b1e1ba0f43ffffccbad889d766f992.js"
 );
 
 self.addEventListener('message', (event) => {
