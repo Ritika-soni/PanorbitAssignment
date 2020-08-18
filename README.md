@@ -1,6 +1,4 @@
-# robofriends
-Tutorial for udemy course - React
-To run the project:
+# PanorbitAssignment
 
 1. Clone this repo
 2. Run `npm install`
